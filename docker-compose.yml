@@ -1,4 +1,5 @@
 app:
   build: .
+  command: ruby app.rb
   volumes:
     - .:/app
