@@ -1,5 +1,5 @@
 app:
   build: .
-  command: ruby app.rb
+  command: bin/start
   volumes:
     - .:/app

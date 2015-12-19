@@ -11,4 +11,4 @@ RUN gem install bundler && \
 # Copy the application
 COPY . ./
 
-CMD ["ruby", "app.rb"]
+CMD ["bin/start"]
