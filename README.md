@@ -45,10 +45,10 @@ Then you install rest of the dependencies
     gem install bundler
     bundle install
 
-### Start the application using docker-compose
+### Run the application using docker-compose
 
     docker-compose up
 
-### Start the application without usgin docker-compose
+### Run the application without usgin docker-compose
 
-    bin/start
+    bin/run
