@@ -19,6 +19,10 @@
 
 # Learn more: http://github.com/javan/whenever
 
+set :path, `pwd`
+
+job_type :run_bin, "cd #{@path} && bin/:task"
+
 every 5.minutes do
-  command "bin/run"
+  run_bin "run"
 end

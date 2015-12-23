@@ -1,3 +1,6 @@
+require "rubygems"
+require "bundler/setup"
+
 # Load DSL and set up stages
 require "capistrano/setup"
 

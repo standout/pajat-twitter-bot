@@ -3,5 +3,7 @@ gem "twitter"
 gem "geocoder"
 gem "rest-client"
 
-gem "whenever", require: false
-gem "capistrano", require: false
+gem "whenever"
+gem "capistrano"
+gem "capistrano-rbenv"
+gem "capistrano-bundler"

@@ -5,13 +5,16 @@ set :application, "pajat_twitter_bot"
 set :repo_url, "git@github.com:standout/pajat-twitter-bot.git"
 
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/pajat_twitter_bot"
 
 # Default value for :pty is false
 # set :pty, true
+
+set :whenever_identifier, -> { "#{fetch(:application)}_#{fetch(:stage)}" }
+set :whenever_roles, -> { :app }
 
 set :linked_files, fetch(:linked_files, []).push(".env")
 
