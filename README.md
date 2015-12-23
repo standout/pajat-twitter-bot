@@ -49,6 +49,6 @@ Then you install rest of the dependencies
 
     docker-compose up
 
-### Start the application without usgin docker-compose
+### Start the application without using docker-compose
 
     bin/start
