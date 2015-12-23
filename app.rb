@@ -33,8 +33,5 @@ def parse_timeline
   end
 end
 
-loop do
-  parse_timeline
-  five_minutes = (60 * 5)
-  sleep five_minutes
-end
+# Parse timeline
+parse_timeline
